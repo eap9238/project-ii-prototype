@@ -25,15 +25,24 @@ const handleDelete = (e) => {
   });
 };
 
+const coinForm = () => {
+    return (
+        <form id="coinForm" name="coinForm" action="/maker" method="GET" className="coinForm">
+            <label htmlFor="coin">Coin: </label>
+            <input id="domoCoin" type="number" name="coin" placeholder="0" disabled/>
+        </form>
+    );
+};
+
 const DomoForm = (props) => {
   return (
     <form id="domoForm" onSubmit={handleDomo} name="domoForm" action="/maker" method="POST" className="domoForm">
         <label htmlFor="name">Name: </label>
-        <input id="domoName" type="text" name="name" placeholder="Domo Name"/>
-        <label htmlFor="age">Age: </label>
-        <input id="domoAge" type="number" name="age" placeholder="Domo Age"/>
-        <label htmlFor="level">Level: </label>
-        <input id="domoLevel" type="number" min="1" max="50" name="level" placeholder="Domo Level"/>
+        <input id="domoType" type="select" name="name" placeholder="Domo Type"/>
+        <label htmlFor="type">Age: </label>
+        <input id="domoType" type="number" name="type" placeholder="Domo Type"/>
+        //<label htmlFor="level">Level: </label>
+        //<input id="domoLevel" type="number" min="1" max="50" name="level" placeholder="Domo Level"/>
         <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
         <input className="makeDomoSubmit" type="submit" value="Make Domo"/>
     </form>
@@ -54,8 +63,18 @@ const DomoList = function(props) {
       <div key={domo._id} className="domo">
         <img src="/assets/img/domoface.jpeg" alt="domo face" className="domoFace"/>
         <h3 className="domoName">Name: {domo.name}</h3>
-        <h3 className="domoAge">Age: {domo.age}</h3>
+        //<h3 className="domoAge">Age: {domo.age}</h3>
         <h3 className="domoLevel">Level: {domo.level}</h3>
+        <form id="levelDomo"
+              onSubmit={handleLevel}
+              name="levelDomo"
+              action="/levelDomo"
+              method="LEVEL"
+        >
+            <input type="hidden" name="_id" value={domo._id}/>
+            <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
+            <input className="makeDomoLevel" type="submit" value="Level Up"/>
+        </form>
         <form id="deleteDomo"
               onSubmit={handleDelete}
               name="deleteDomo"
@@ -64,7 +83,7 @@ const DomoList = function(props) {
         >
             <input type="hidden" name="_id" value={domo._id}/>
             <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
-            <input className="makeDomoDelete" type="submit" value="Delete"/>
+            <input className="makeDomoDelete" type="submit" value="Sell"/>
         </form>
       </div>
     );

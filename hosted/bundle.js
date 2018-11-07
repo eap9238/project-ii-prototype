@@ -50,7 +50,13 @@ var DomoForm = function DomoForm(props) {
     ),
     React.createElement("input", { id: "domoLevel", type: "number", min: "1", max: "50", name: "level", placeholder: "Domo Level" }),
     React.createElement("input", { type: "hidden", id: "token", name: "_csrf", value: props.csrf }),
-    React.createElement("input", { className: "makeDomoSubmit", type: "submit", value: "Make Domo" })
+    React.createElement("input", { className: "makeDomoSubmit", type: "submit", value: "Make Domo" }),
+    React.createElement(
+      "label",
+      { htmlFor: "coin" },
+      "Coin: "
+    ),
+    React.createElement("input", { id: "domoCoin", type: "number", name: "coin", placeholder: "0", disabled: true })
   );
 };
 
