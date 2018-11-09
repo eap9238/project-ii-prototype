@@ -194,7 +194,6 @@ nav:nth-child(1) {
 }
 
 #domo {
-    position: relative;
     z-index: 225;
     margin-top: -20px;
     margin-left: 135px;
@@ -215,6 +214,7 @@ nav:nth-child(1) {
 }
 
 .domo {
+    position: relative;
     width: 95%;
     margin: 0 auto;
     margin-top: 2px;
