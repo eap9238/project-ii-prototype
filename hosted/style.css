@@ -257,12 +257,14 @@ h3.domoTitle {
 div.domoBody {
     float:right;
     text-align: left;
-    width: 100%;
+    width: 80%;
     font-weight: bold;
     padding-right: 40px;
     font-size: 1.5em;
     background-color: #90D1FF;
     border-left: : 6px solid #C5E7FF;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .domo:first-child {
