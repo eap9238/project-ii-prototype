@@ -216,7 +216,7 @@ nav:nth-child(1) {
 
 .domoList {
     writing-mode: vertical-lr;
-    height: 868px;
+    max-width: 868px;
 }
 
 @media (max-width: 900px) {
@@ -232,7 +232,7 @@ nav:nth-child(1) {
 
     .domoList {
         writing-mode: vertical-lr;
-        height: 434px;
+        max-width: 434px;
     }
 }
 
@@ -249,7 +249,7 @@ nav:nth-child(1) {
 
     .domoList {
         writing-mode: vertical-lr;
-        height: 1032px;
+        max-width: 1032px;
     }
 }
 
