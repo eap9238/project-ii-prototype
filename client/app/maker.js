@@ -29,9 +29,9 @@ const DomoForm = (props) => {
   return (
     <form id="domoForm" onSubmit={handleDomo} name="domoForm" action="/maker" method="POST" className="domoForm">
         <label htmlFor="title">Title: </label>
-        <input id="domoType" type="text" name="title" placeholder="Note Title"/>
+        <input id="domoTitle" type="text" name="title" placeholder="Note Title"/>
         <label htmlFor="body">Contents: </label>
-        <input id="domoBody" type="text" name="body" placeholder="Domo Contents"/>
+        <input id="domoBody" type="text" name="body" placeholder="Note Contents"/>
         <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
         <input className="makeDomoSubmit" type="submit" value="Make Domo"/>
     </form>
@@ -61,7 +61,7 @@ const DomoList = function(props) {
         >
             <input type="hidden" name="_id" value={domo._id}/>
             <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
-            <input className="makeDomoDelete" type="submit" value="Sell"/>
+            <input className="makeDomoDelete" type="submit" value="Delete Note"/>
         </form>
       </div>
     );

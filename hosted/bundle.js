@@ -36,13 +36,13 @@ var DomoForm = function DomoForm(props) {
       { htmlFor: "title" },
       "Title: "
     ),
-    React.createElement("input", { id: "domoType", type: "text", name: "title", placeholder: "Note Title" }),
+    React.createElement("input", { id: "domoTitle", type: "text", name: "title", placeholder: "Note Title" }),
     React.createElement(
       "label",
       { htmlFor: "body" },
       "Contents: "
     ),
-    React.createElement("input", { id: "domoBody", type: "text", name: "body", placeholder: "Domo Contents" }),
+    React.createElement("input", { id: "domoBody", type: "text", name: "body", placeholder: "Note Contents" }),
     React.createElement("input", { type: "hidden", id: "token", name: "_csrf", value: props.csrf }),
     React.createElement("input", { className: "makeDomoSubmit", type: "submit", value: "Make Domo" })
   );
@@ -88,7 +88,7 @@ var DomoList = function DomoList(props) {
         },
         React.createElement("input", { type: "hidden", name: "_id", value: domo._id }),
         React.createElement("input", { type: "hidden", id: "token", name: "_csrf", value: props.csrf }),
-        React.createElement("input", { className: "makeDomoDelete", type: "submit", value: "Sell" })
+        React.createElement("input", { className: "makeDomoDelete", type: "submit", value: "Delete Note" })
       )
     );
   });
