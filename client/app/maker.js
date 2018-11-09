@@ -25,22 +25,13 @@ const handleDelete = (e) => {
   });
 };
 
-const coinForm = () => {
-    return (
-        <form id="coinForm" name="coinForm" action="/maker" method="GET" className="coinForm">
-            <label htmlFor="coin">Coin: </label>
-            <input id="domoCoin" type="number" name="coin" placeholder="0" disabled/>
-        </form>
-    );
-};
-
 const DomoForm = (props) => {
   return (
     <form id="domoForm" onSubmit={handleDomo} name="domoForm" action="/maker" method="POST" className="domoForm">
         <label htmlFor="title">Title: </label>
-        <input id="domoType" type="string" name="title" placeholder="Note Title"/>
+        <input id="domoType" type="text" name="title" placeholder="Note Title"/>
         <label htmlFor="body">Contents: </label>
-        <input id="domoBody" type="string" name="body" placeholder="Domo Contents"/>
+        <input id="domoBody" type="text" name="body" placeholder="Domo Contents"/>
         //<label htmlFor="level">Level: </label>
         //<input id="domoLevel" type="number" min="1" max="50" name="level" placeholder="Domo Level"/>
         <input type="hidden" id="token" name="_csrf" value={props.csrf}/>

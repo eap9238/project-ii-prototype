@@ -27,19 +27,6 @@ var handleDelete = function handleDelete(e) {
   });
 };
 
-var coinForm = function coinForm() {
-  return React.createElement(
-    "form",
-    { id: "coinForm", name: "coinForm", action: "/maker", method: "GET", className: "coinForm" },
-    React.createElement(
-      "label",
-      { htmlFor: "coin" },
-      "Coin: "
-    ),
-    React.createElement("input", { id: "domoCoin", type: "number", name: "coin", placeholder: "0", disabled: true })
-  );
-};
-
 var DomoForm = function DomoForm(props) {
   return React.createElement(
     "form",
@@ -49,13 +36,13 @@ var DomoForm = function DomoForm(props) {
       { htmlFor: "title" },
       "Title: "
     ),
-    React.createElement("input", { id: "domoType", type: "string", name: "title", placeholder: "Note Title" }),
+    React.createElement("input", { id: "domoType", type: "text", name: "title", placeholder: "Note Title" }),
     React.createElement(
       "label",
       { htmlFor: "body" },
       "Contents: "
     ),
-    React.createElement("input", { id: "domoBody", type: "string", name: "body", placeholder: "Domo Contents" }),
+    React.createElement("input", { id: "domoBody", type: "text", name: "body", placeholder: "Domo Contents" }),
     "//",
     React.createElement(
       "label",
