@@ -31,7 +31,7 @@ const DomoForm = (props) => {
         <label htmlFor="title">Title: </label>
         <input id="domoTitle" type="text" name="title" placeholder="Note Title"/>
         <label htmlFor="body">Contents: </label>
-        <input id="domoBody" type="text" name="body" placeholder="Note Contents"/>
+        <input id="domoBody" type="textarea" name="body" placeholder="Note Contents"/>
         <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
         <input className="makeDomoSubmit" type="submit" value="Make Domo"/>
     </form>
@@ -51,8 +51,8 @@ const DomoList = function(props) {
     return (
       <div key={domo._id} className="domo">
         <img src="/assets/img/domoface.jpeg" alt="domo face" className="domoFace"/>
-        <h3 className="domoTitle">Title: {domo.title}</h3>
-        <h3 className="domoBody">Body: {domo.body}</h3>
+        <h3 className="domoTitle">{domo.title}</h3>
+        <h4 className="domoBody">{domo.body}</h4>
         <form id="deleteDomo"
               onSubmit={handleDelete}
               name="deleteDomo"

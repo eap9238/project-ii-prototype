@@ -67,7 +67,7 @@ nav:nth-child(1) {
     color: white;
 }
 
-.domoForm input[type=text], input[type=number] {
+.domoForm input[type=text], input[type=textarea] {
     float:left;
 }
 
@@ -246,7 +246,7 @@ h3.emptyDomo {
     margin-top: 18px;
 }
 
-h3.domoName {
+h3.domoTitle {
     float:left;
     width: 200px;
     font-weight: bold;
@@ -254,13 +254,15 @@ h3.domoName {
     font-size: 1.5em;
 }
 
-h3.domoAge {
+h4.domoBody {
     float:right;
     text-align: left;
     width: 100px;
     font-weight: bold;
     padding-right: 40px;
     font-size: 1.5em;
+    background-color: #90D1FF;
+    border-left: : 6px solid #C5E7FF;
 }
 
 .domo:first-child {
