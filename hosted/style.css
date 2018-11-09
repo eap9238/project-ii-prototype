@@ -206,7 +206,7 @@ nav:nth-child(1) {
 }
 
 #domos {
-    width: 40%;
+    width: 80%;
     min-width: 400px;
     border: 2px solid #55acee;
     border-radius: 4px;
@@ -215,7 +215,7 @@ nav:nth-child(1) {
 }
 
 .domo {
-    position: inline-block;
+    display: inline-block;
     width: 400px;
     margin: 0 auto;
     margin-top: 2px;
