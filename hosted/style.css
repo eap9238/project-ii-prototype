@@ -84,14 +84,14 @@ nav:nth-child(1) {
 .makeDomoDelete {
     transition: background-color 0.4s ease;
     display: block;
-    width: 90px;
+    width: 12px;
     background-color: #55acee;
     border-radius: 2px;
     color: white;
     text-decoration: none;
     margin-top: 2px;
     margin-right: 2px;
-    position: relative;
+    position: absolute;
     top: 0;
     right: 0;
 }
@@ -194,6 +194,7 @@ nav:nth-child(1) {
 }
 
 #domo {
+    position: relative;
     z-index: 225;
     margin-top: -20px;
     margin-left: 135px;
