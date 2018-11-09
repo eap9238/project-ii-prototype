@@ -239,12 +239,10 @@ nav:nth-child(1) {
 }
 
 .domoList {
-    writing-mode: vertical-lr;
-    max-width: inherit;
 }
 
 .domo {
-    writing-mode: horizontal-tb;
+    float: left;
     position: relative;
     display: inline-block;
     width: 400px;
