@@ -43,7 +43,7 @@ DomoSchema.statics.findByOwner = (ownerId, callback) => {
     owner: convertID(ownerId),
   };
 
-  return DomoModel.find(search).select('name age level').exec(callback);
+  return DomoModel.find(search).select('title body').exec(callback);
 };
 
 DomoSchema.statics.removeByID = (docID, callback) => {
