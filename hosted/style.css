@@ -205,21 +205,19 @@ nav:nth-child(1) {
     transform: rotate(330deg);
 }
 
+#domos {
+    width: 868px;
+    border: 2px solid #55acee;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 5px;
+}
+
 @media (max-width: 900px) {
     #domos {
         width: 434;
         min-width: 420px;
-        border: 2px solid #55acee;
-        border-radius: 4px;
-        margin: 0 auto;
-        margin-top: 100px;
-        padding: 5px;
-    }
-}
-
-@media (min-width: 900px) and (max-width: 1460) {
-    #domos {
-        width: 868px;
         border: 2px solid #55acee;
         border-radius: 4px;
         margin: 0 auto;
