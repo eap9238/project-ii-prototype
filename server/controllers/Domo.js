@@ -15,15 +15,14 @@ const makerPage = (req, res) => {
 
 //create domo
 const makeDomo = (req, res) => {
-  if (!req.body.name || !req.body.age || !req.body.level) {
-    return res.status(400).json({ error: 'RAWR! Both name and age are required' });
+  if (!req.body.title || !req.body.body) {
+    return res.status(400).json({ error: 'RAWR! Both title and contents are required' });
   }
 
     //set internal data
   const domoData = {
-    name: req.body.name,
-    age: req.body.age,
-    level: req.body.level,
+    title: req.body.title,
+    body: req.body.body,
     owner: req.session.account._id,
   };
 

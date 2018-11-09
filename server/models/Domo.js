@@ -7,17 +7,17 @@ let DomoModel = {};
 // mongoose.Types.ObjectID is a function that
 // converts string ID to real mongo ID
 const convertID = mongoose.Types.ObjectId;
-const setName = (name) => _.escape(name).trim();
+const setTitle = (title) => _.escape(title).trim();
 
 const DomoSchema = new mongoose.Schema({
-  name: {
+  title: {
     type: String,
     required: true,
     trim: true,
-    set: setName,
+    set: setTitle,
   },
-  age: {
-    type: Number,
+  body: {
+    type: String,
     min: 0,
     required: true,
   },
@@ -26,11 +26,6 @@ const DomoSchema = new mongoose.Schema({
     required: true,
     ref: 'Account',
   },
-  level: {
-    type: Number,
-    min: 1,
-    required: true,
-  },
   createdData: {
     type: Date,
     default: Date.now,
@@ -38,9 +33,8 @@ const DomoSchema = new mongoose.Schema({
 });
 
 DomoSchema.statics.toAPI = (doc) => ({
-  name: doc.name,
-  age: doc.age,
-  level: doc.level,
+  title: doc.title,
+  body: doc.body,
   _id: doc._id,
 });
 
