@@ -215,6 +215,7 @@ nav:nth-child(1) {
 }
 
 .domo {
+    position: relative;
     display: inline-block;
     width: 400px;
     margin: 5px;
