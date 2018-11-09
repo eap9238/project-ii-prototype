@@ -72,7 +72,7 @@ var DomoList = function DomoList(props) {
         domo.title
       ),
       React.createElement(
-        "h4",
+        "div",
         { className: "domoBody" },
         domo.body
       ),

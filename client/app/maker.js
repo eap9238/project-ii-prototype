@@ -52,7 +52,7 @@ const DomoList = function(props) {
       <div key={domo._id} className="domo">
         <img src="/assets/img/domoface.jpeg" alt="domo face" className="domoFace"/>
         <h3 className="domoTitle">{domo.title}</h3>
-        <h4 className="domoBody">{domo.body}</h4>
+        <div className="domoBody">{domo.body}</div>
         <form id="deleteDomo"
               onSubmit={handleDelete}
               name="deleteDomo"

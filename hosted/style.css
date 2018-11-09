@@ -254,10 +254,10 @@ h3.domoTitle {
     font-size: 1.5em;
 }
 
-h4.domoBody {
+div.domoBody {
     float:right;
     text-align: left;
-    width: 100px;
+    width: 100%;
     font-weight: bold;
     padding-right: 40px;
     font-size: 1.5em;
