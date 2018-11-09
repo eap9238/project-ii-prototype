@@ -240,7 +240,7 @@ nav:nth-child(1) {
 
 .domoList {
     writing-mode: vertical-lr;
-    display: contents;
+    max-width: inherit;
 }
 
 .domo {
