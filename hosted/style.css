@@ -206,7 +206,7 @@ nav:nth-child(1) {
 }
 
 #domos {
-    height: 868px;
+    width: 868px;
     border: 2px solid #55acee;
     border-radius: 4px;
     margin: 0 auto;
@@ -214,21 +214,31 @@ nav:nth-child(1) {
     padding: 5px;
 }
 
+.domoList {
+    writing-mode: vertical-lr;
+    height: 868px;
+}
+
 @media (max-width: 900px) {
     #domos {
-        height: 434;
+        width: 434;
         min-width: 420px;
         border: 2px solid #55acee;
         border-radius: 4px;
         margin: 0 auto;
         margin-top: 100px;
         padding: 5px;
+    }
+
+    .domoList {
+        writing-mode: vertical-lr;
+        height: 434px;
     }
 }
 
 @media (min-width: 1460px) {
     #domos {
-        height: 1302;
+        width: 1302;
         min-width: 420px;
         border: 2px solid #55acee;
         border-radius: 4px;
@@ -236,10 +246,11 @@ nav:nth-child(1) {
         margin-top: 100px;
         padding: 5px;
     }
-}
 
-.domoList {
-    writing-mode: vertical-lr;    
+    .domoList {
+        writing-mode: vertical-lr;
+        height: 1032px;
+    }
 }
 
 .domo {
