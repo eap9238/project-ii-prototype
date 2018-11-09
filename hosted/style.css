@@ -239,6 +239,7 @@ nav:nth-child(1) {
 }
 
 .domoList {
+    overflow: auto;
 }
 
 .domo {
