@@ -258,9 +258,9 @@ div.domoBody {
     float: right;
     text-align: left;
     width: 80%;
-    font-weight: bold;
+    padding 5px;
     padding-right: 40px;
-    font-size: 1.0em;
+    font-size: 1.25em;
     background-color: #90D1FF;
     border-left: 6px solid #C5E7FF;
     margin-top: 10px;
