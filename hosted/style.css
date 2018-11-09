@@ -215,9 +215,10 @@ nav:nth-child(1) {
     padding: 5px;
 }
 
-@media (max-width: 1064) {
+@media (max-width: 900px) {
     #domos {
-        width: 868px;
+        width: 434;
+        min-width: 420px;
         border: 2px solid #55acee;
         border-radius: 4px;
         margin: 0 auto;
@@ -226,10 +227,9 @@ nav:nth-child(1) {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1064) {
     #domos {
-        width: 434;
-        min-width: 420px;
+        width: 868px;
         border: 2px solid #55acee;
         border-radius: 4px;
         margin: 0 auto;
