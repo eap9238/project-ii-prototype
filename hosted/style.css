@@ -214,11 +214,6 @@ nav:nth-child(1) {
     padding: 5px;
 }
 
-.domoList {
-    writing-mode: vertical-lr;
-    max-width: 868px;
-}
-
 @media (max-width: 900px) {
     #domos {
         width: 434;
@@ -228,11 +223,6 @@ nav:nth-child(1) {
         margin: 0 auto;
         margin-top: 100px;
         padding: 5px;
-    }
-
-    .domoList {
-        writing-mode: vertical-lr;
-        max-width: 434px;
     }
 }
 
@@ -246,11 +236,11 @@ nav:nth-child(1) {
         margin-top: 100px;
         padding: 5px;
     }
+}
 
-    .domoList {
-        writing-mode: vertical-lr;
-        max-width: 1032px;
-    }
+.domoList {
+    writing-mode: vertical-lr;
+    display: -webkit-box;
 }
 
 .domo {
