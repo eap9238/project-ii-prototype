@@ -32,8 +32,6 @@ const DomoForm = (props) => {
         <input id="domoType" type="text" name="title" placeholder="Note Title"/>
         <label htmlFor="body">Contents: </label>
         <input id="domoBody" type="text" name="body" placeholder="Domo Contents"/>
-        //<label htmlFor="level">Level: </label>
-        //<input id="domoLevel" type="number" min="1" max="50" name="level" placeholder="Domo Level"/>
         <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
         <input className="makeDomoSubmit" type="submit" value="Make Domo"/>
     </form>
