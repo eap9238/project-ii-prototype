@@ -84,7 +84,7 @@ nav:nth-child(1) {
 .makeDomoDelete {
     transition: background-color 0.4s ease;
     display: block;
-    width: 12px;
+    width: 24px;
     background-color: #55acee;
     border-radius: 2px;
     color: white;
