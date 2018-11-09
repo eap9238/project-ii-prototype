@@ -61,7 +61,7 @@ const DomoList = function(props) {
         >
             <input type="hidden" name="_id" value={domo._id}/>
             <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
-            <input className="makeDomoDelete" type="submit" value="Delete Note"/>
+            <input className="makeDomoDelete" type="submit" value="X"/>
         </form>
       </div>
     );

@@ -86,7 +86,7 @@ var DomoList = function DomoList(props) {
         },
         React.createElement("input", { type: "hidden", name: "_id", value: domo._id }),
         React.createElement("input", { type: "hidden", id: "token", name: "_csrf", value: props.csrf }),
-        React.createElement("input", { className: "makeDomoDelete", type: "submit", value: "Delete Note" })
+        React.createElement("input", { className: "makeDomoDelete", type: "submit", value: "X" })
       )
     );
   });
