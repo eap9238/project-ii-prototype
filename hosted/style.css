@@ -240,6 +240,11 @@ nav:nth-child(1) {
 
 .domoList {
     overflow: auto;
+    
+    -moz-column-width: 18em;
+    -webkit-column-width: 18em;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 10px;
 }
 
 .domo {
@@ -247,7 +252,8 @@ nav:nth-child(1) {
     position: relative;
     display: inline-block;
     width: 400px;
-    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     border: 2px solid #55acee;
     border-radius: 4px;
     background-color: #55acee;
