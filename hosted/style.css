@@ -226,18 +226,6 @@ nav:nth-child(1) {
     }
 }
 
-@media (min-width: 1460px) {
-    #domos {
-        width: 1302;
-        min-width: 420px;
-        border: 2px solid #55acee;
-        border-radius: 4px;
-        margin: 0 auto;
-        margin-top: 100px;
-        padding: 5px;
-    }
-}
-
 .domoList {
     overflow: auto;
     
