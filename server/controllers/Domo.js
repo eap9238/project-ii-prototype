@@ -15,7 +15,7 @@ const makerPage = (req, res) => {
 
 //create domo
 const makeDomo = (req, res) => {
-  if (!req.body.title || !req.body.body) {
+  if (!req.body.title || !req.body.body || !req.body.colour) {
     return res.status(400).json({ error: 'RAWR! Both title and contents are required' });
   }
 
@@ -24,7 +24,7 @@ const makeDomo = (req, res) => {
     title: req.body.title,
     body: req.body.body,
     owner: req.session.account._id,
-    colour: req.body.colour,
+    colour: req.body.colour.value,
   };
 
   const newDomo = new Domo.DomoModel(domoData);
