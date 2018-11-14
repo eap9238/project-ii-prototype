@@ -81,86 +81,6 @@ nav:nth-child(1) {
     text-decoration: none;
 }
 
-.red < .makeDomoDelete {
-    transition: background-color 0.4s ease;
-    display: block;
-    width: 24px;    
-    height: 24px;
-    background-color: #DF2935;
-    border-radius: 2px;
-    color: white;
-    text-decoration: none;
-    margin-top: 2px;
-    margin-right: 2px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.orange < .makeDomoDelete {
-    transition: background-color 0.4s ease;
-    display: block;
-    width: 24px;    
-    height: 24px;
-    background-color: #FFAE03;
-    border-radius: 2px;
-    color: white;
-    text-decoration: none;
-    margin-top: 2px;
-    margin-right: 2px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.yellow < .makeDomoDelete {
-    transition: background-color 0.4s ease;
-    display: block;
-    width: 24px;    
-    height: 24px;
-    background-color: #FFE74C;
-    border-radius: 2px;
-    color: white;
-    text-decoration: none;
-    margin-top: 2px;
-    margin-right: 2px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.green < .makeDomoDelete {
-    transition: background-color 0.4s ease;
-    display: block;
-    width: 24px;    
-    height: 24px;
-    background-color: #35FF69;
-    border-radius: 2px;
-    color: white;
-    text-decoration: none;
-    margin-top: 2px;
-    margin-right: 2px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.blue < .makeDomoDelete {
-    transition: background-color 0.4s ease;
-    display: block;
-    width: 24px;    
-    height: 24px;
-    background-color: #30BCED;
-    border-radius: 2px;
-    color: white;
-    text-decoration: none;
-    margin-top: 2px;
-    margin-right: 2px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
 .makeDomoSubmit:link, .makeDomoSubmit:visited, .makeDomoSubmit:hover, .makeDomoSubmit:active {
     color: white;
 }
@@ -299,27 +219,6 @@ nav:nth-child(1) {
     -webkit-column-gap: 10px;
 }
 
-.domo {
-    position: relative;
-    display: inline-block;
-    width: 400px;
-    margin-top: 10px;
-    margin: 5px;
-    border: 2px solid #55acee;
-    border-radius: 4px;
-    background-color: #55acee;
-    padding: 10px;
-    min-height:60px;
-    overflow: hidden;
-}
-
-.domo:hover {
-    transition: border-color 0.2s ease-out;
-    border-color: rgba(255,255,255, 0.8);
-    transition: background-color 2.6s ease-out;
-    background-color: #66bfff;
-}
-
 .red {
     position: relative;
     display: inline-block;
@@ -354,72 +253,20 @@ nav:nth-child(1) {
     margin-bottom: 30px;
 }
 
-.yellow {
-    position: relative;
-    display: inline-block;
-    width: 400px;
-    margin-top: 10px;
-    margin: 5px;
-    border: 2px solid #FFE74C;
-    border-radius: 4px;
-    background-color: #FFE74C;
-    padding: 10px;
-    min-height:60px;
-    overflow: hidden;
-}
-
-.yellow:hover {
-    transition: border-color 0.2s ease-out;
-    border-color: rgba(255,255,255, 0.8);
-    transition: background-color 2.6s ease-out;
-    background-color: #EED322;
-}
-
-.yellow > .domoBody {
-    float: right;
-    text-align: left;
-    width: 80%;
-    padding: 5px;
-    padding-right: 40px;
-    font-size: 1.25em;
-    background-color: #FFEC6F;
-    border-left: 6px solid #FFF19A;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-.blue {
-    position: relative;
-    display: inline-block;
-    width: 400px;
-    margin-top: 10px;
-    margin: 5px;
-    border: 2px solid #30BCED;
-    border-radius: 4px;
-    background-color: #30BCED;
-    padding: 10px;
-    min-height:60px;
-    overflow: hidden;
-}
-
-.blue:hover {
-    transition: border-color 0.2s ease-out;
-    border-color: rgba(255,255,255, 0.8);
-    transition: background-color 2.6s ease-out;
-    background-color: #08AFE6;
-}
-
-.blue > .domoBody {
-    float: right;
-    text-align: left;
-    width: 80%;
-    padding: 5px;
-    padding-right: 40px;
-    font-size: 1.25em;
-    background-color: #58CBF1;
-    border-left: 6px solid #86D9F5;
-    margin-top: 10px;
-    margin-bottom: 30px;
+.red > .makeDomoDelete {
+    transition: background-color 0.4s ease;
+    display: block;
+    width: 24px;    
+    height: 24px;
+    background-color: #DF2935;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-right: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .orange {
@@ -456,6 +303,72 @@ nav:nth-child(1) {
     margin-bottom: 30px;
 }
 
+.orange > .makeDomoDelete {
+    transition: background-color 0.4s ease;
+    display: block;
+    width: 24px;    
+    height: 24px;
+    background-color: #FFAE03;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-right: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.yellow {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    margin-top: 10px;
+    margin: 5px;
+    border: 2px solid #FFE74C;
+    border-radius: 4px;
+    background-color: #FFE74C;
+    padding: 10px;
+    min-height:60px;
+    overflow: hidden;
+}
+
+.yellow:hover {
+    transition: border-color 0.2s ease-out;
+    border-color: rgba(255,255,255, 0.8);
+    transition: background-color 2.6s ease-out;
+    background-color: #EED322;
+}
+
+.yellow > .domoBody {
+    float: right;
+    text-align: left;
+    width: 80%;
+    padding: 5px;
+    padding-right: 40px;
+    font-size: 1.25em;
+    background-color: #FFEC6F;
+    border-left: 6px solid #FFF19A;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.yellow > .makeDomoDelete {
+    transition: background-color 0.4s ease;
+    display: block;
+    width: 24px;    
+    height: 24px;
+    background-color: #FFE74C;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-right: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .green {
     position: relative;
     display: inline-block;
@@ -488,6 +401,72 @@ nav:nth-child(1) {
     border-left: 6px solid #92FEAE;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+
+.green > .makeDomoDelete {
+    transition: background-color 0.4s ease;
+    display: block;
+    width: 24px;    
+    height: 24px;
+    background-color: #35FF69;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-right: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.blue {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    margin-top: 10px;
+    margin: 5px;
+    border: 2px solid #30BCED;
+    border-radius: 4px;
+    background-color: #30BCED;
+    padding: 10px;
+    min-height:60px;
+    overflow: hidden;
+}
+
+.blue:hover {
+    transition: border-color 0.2s ease-out;
+    border-color: rgba(255,255,255, 0.8);
+    transition: background-color 2.6s ease-out;
+    background-color: #08AFE6;
+}
+
+.blue > .domoBody {
+    float: right;
+    text-align: left;
+    width: 80%;
+    padding: 5px;
+    padding-right: 40px;
+    font-size: 1.25em;
+    background-color: #58CBF1;
+    border-left: 6px solid #86D9F5;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.blue > .makeDomoDelete {
+    transition: background-color 0.4s ease;
+    display: block;
+    width: 24px;    
+    height: 24px;
+    background-color: #30BCED;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-right: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 img.domoFace {
