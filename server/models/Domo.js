@@ -39,7 +39,7 @@ DomoSchema.statics.toAPI = (doc) => ({
   title: doc.title,
   body: doc.body,
   _id: doc._id,
-  colour: doc.colour.value,
+  colour: doc.colour,
 });
 
 DomoSchema.statics.findByOwner = (ownerId, callback) => {
@@ -47,7 +47,7 @@ DomoSchema.statics.findByOwner = (ownerId, callback) => {
     owner: convertID(ownerId),
   };
 
-  return DomoModel.find(search).select('title body').exec(callback);
+  return DomoModel.find(search).select('title body colour').exec(callback);
 };
 
 DomoSchema.statics.removeByID = (docID, callback) => {
