@@ -111,6 +111,12 @@ var DomoList = function DomoList(props) {
         domo.body
       ),
       React.createElement(
+        "p",
+        null,
+        "\"Colour: \" + ",
+        domo.colour
+      ),
+      React.createElement(
         "form",
         { id: "deleteDomo",
           onSubmit: handleDelete,
