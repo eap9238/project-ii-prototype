@@ -34,11 +34,11 @@ const DomoForm = (props) => {
         <input id="domoBody" type="textarea" name="body" placeholder="Note Contents"/>
         <label htmlFor="colour">Colour: </label>
         <select id="domoColour" name="colour">
-            <option selected style={{backgroundColor:'#DF2935'}} value="#DF2935"></option>
-            <option style={{backgroundColor:'#E4FF1A'}} value="#E4FF1A"></option>
-            <option style={{backgroundColor:'#30BCED'}} value="#30BCED"></option>
-            <option style={{backgroundColor:'#FFAE03'}} value="#FFAE03"></option>
-            <option style={{backgroundColor:'#35FF69'}} value="#35FF69"></option>
+            <option selected style={{backgroundColor:'#DF2935'}} value="red"></option>
+            <option style={{backgroundColor:'#FFE74C'}} value="yellow"></option>
+            <option style={{backgroundColor:'#30BCED'}} value="blue"></option>
+            <option style={{backgroundColor:'#FFAE03'}} value="orange"></option>
+            <option style={{backgroundColor:'#35FF69'}} value="green"></option>
         </select>
         <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
         <input className="makeDomoSubmit" type="submit" value="Make Domo"/>

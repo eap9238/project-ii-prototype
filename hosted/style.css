@@ -256,6 +256,176 @@ nav:nth-child(1) {
     background-color: #66bfff;
 }
 
+.red {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    margin-top: 10px;
+    margin: 5px;
+    border: 2px solid #DF2935;
+    border-radius: 4px;
+    background-color: #DF2935;
+    padding: 10px;
+    min-height:60px;
+    overflow: hidden;
+}
+
+.red:hover {
+    transition: border-color 0.2s ease-out;
+    border-color: rgba(255,255,255, 0.8);
+    transition: background-color 2.6s ease-out;
+    background-color: #B7101C;
+}
+
+.red.domoBody {
+    float: right;
+    text-align: left;
+    width: 80%;
+    padding: 5px;
+    padding-right: 40px;
+    font-size: 1.25em;
+    background-color: #F0515D;
+    border-left: 6px solid #FA7B84;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.yellow {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    margin-top: 10px;
+    margin: 5px;
+    border: 2px solid #FFE74C;
+    border-radius: 4px;
+    background-color: #FFE74C;
+    padding: 10px;
+    min-height:60px;
+    overflow: hidden;
+}
+
+.yellow:hover {
+    transition: border-color 0.2s ease-out;
+    border-color: rgba(255,255,255, 0.8);
+    transition: background-color 2.6s ease-out;
+    background-color: #EED322;
+}
+
+.yellow.domoBody {
+    float: right;
+    text-align: left;
+    width: 80%;
+    padding: 5px;
+    padding-right: 40px;
+    font-size: 1.25em;
+    background-color: #FFEC6F;
+    border-left: 6px solid #FFF19A;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.blue {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    margin-top: 10px;
+    margin: 5px;
+    border: 2px solid #30BCED;
+    border-radius: 4px;
+    background-color: #30BCED;
+    padding: 10px;
+    min-height:60px;
+    overflow: hidden;
+}
+
+.blue:hover {
+    transition: border-color 0.2s ease-out;
+    border-color: rgba(255,255,255, 0.8);
+    transition: background-color 2.6s ease-out;
+    background-color: #08AFE6;
+}
+
+.blue.domoBody {
+    float: right;
+    text-align: left;
+    width: 80%;
+    padding: 5px;
+    padding-right: 40px;
+    font-size: 1.25em;
+    background-color: #58CBF1;
+    border-left: 6px solid #86D9F5;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.orange {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    margin-top: 10px;
+    margin: 5px;
+    border: 2px solid #FFAE03;
+    border-radius: 4px;
+    background-color: #FFAE03;
+    padding: 10px;
+    min-height:60px;
+    overflow: hidden;
+}
+
+.orange:hover {
+    transition: border-color 0.2s ease-out;
+    border-color: rgba(255,255,255, 0.8);
+    transition: background-color 2.6s ease-out;
+    background-color: #C78700;
+}
+
+.orange.domoBody {
+    float: right;
+    text-align: left;
+    width: 80%;
+    padding: 5px;
+    padding-right: 40px;
+    font-size: 1.25em;
+    background-color: #FFC03B;
+    border-left: 6px solid #FFCD65;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.green {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    margin-top: 10px;
+    margin: 5px;
+    border: 2px solid #35FF69;
+    border-radius: 4px;
+    background-color: #35FF69;
+    padding: 10px;
+    min-height:60px;
+    overflow: hidden;
+}
+
+.green:hover {
+    transition: border-color 0.2s ease-out;
+    border-color: rgba(255,255,255, 0.8);
+    transition: background-color 2.6s ease-out;
+    background-color: #05FF47;
+}
+
+.green.domoBody {
+    float: right;
+    text-align: left;
+    width: 80%;
+    padding: 5px;
+    padding-right: 40px;
+    font-size: 1.25em;
+    background-color: #60FF8A;
+    border-left: 6px solid #92FEAE;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
 img.domoFace {
     margin-left: 25px;
     margin-right: 10px;

@@ -51,11 +51,11 @@ var DomoForm = function DomoForm(props) {
     React.createElement(
       "select",
       { id: "domoColour", name: "colour" },
-      React.createElement("option", { selected: true, style: { backgroundColor: '#DF2935' }, value: "#DF2935" }),
-      React.createElement("option", { style: { backgroundColor: '#E4FF1A' }, value: "#E4FF1A" }),
-      React.createElement("option", { style: { backgroundColor: '#30BCED' }, value: "#30BCED" }),
-      React.createElement("option", { style: { backgroundColor: '#FFAE03' }, value: "#FFAE03" }),
-      React.createElement("option", { style: { backgroundColor: '#35FF69' }, value: "#35FF69" })
+      React.createElement("option", { selected: true, style: { backgroundColor: '#DF2935' }, value: "red" }),
+      React.createElement("option", { style: { backgroundColor: '#FFE74C' }, value: "yellow" }),
+      React.createElement("option", { style: { backgroundColor: '#30BCED' }, value: "blue" }),
+      React.createElement("option", { style: { backgroundColor: '#FFAE03' }, value: "orange" }),
+      React.createElement("option", { style: { backgroundColor: '#35FF69' }, value: "green" })
     ),
     React.createElement("input", { type: "hidden", id: "token", name: "_csrf", value: props.csrf }),
     React.createElement("input", { className: "makeDomoSubmit", type: "submit", value: "Make Domo" })

@@ -16,10 +16,6 @@ const AccountSchema = new mongoose.Schema({
     unique: true,
     match: /^[A-Za-z0-9_\-.]{1,16}$/,
   },
-  coin: {
-    type: Number,
-    default: 0,
-  },
   salt: {
     type: Buffer,
     required: true,
@@ -31,6 +27,9 @@ const AccountSchema = new mongoose.Schema({
   createdDate: {
     type: Date,
     default: Date.now,
+  },
+  class: {
+    type: String,
   },
 });
 
