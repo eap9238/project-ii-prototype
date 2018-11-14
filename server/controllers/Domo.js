@@ -24,7 +24,7 @@ const makeDomo = (req, res) => {
     title: req.body.title,
     body: req.body.body,
     owner: req.session.account._id,
-    colour: req.body.colour,
+    colour: req.body.colour.value,
   };
     
   console.dir(domoData.colour);
