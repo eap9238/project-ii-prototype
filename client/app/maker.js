@@ -35,10 +35,10 @@ const DomoForm = (props) => {
         <label htmlFor="colour">Colour: </label>
         <select id="domoColour" name="colour">
             <option selected style={{backgroundColor:'#DF2935'}} value="red"></option>
-            <option style={{backgroundColor:'#FFE74C'}} value="yellow"></option>
-            <option style={{backgroundColor:'#30BCED'}} value="blue"></option>
-            <option style={{backgroundColor:'#FFAE03'}} value="orange"></option>
-            <option style={{backgroundColor:'#35FF69'}} value="green"></option>
+            <option style={{backgroundColor:'#FFE74C'}} value="yellow">red</option>
+            <option style={{backgroundColor:'#30BCED'}} value="blue">blue</option>
+            <option style={{backgroundColor:'#FFAE03'}} value="orange">orange</option>
+            <option style={{backgroundColor:'#35FF69'}} value="green">green</option>
         </select>
         <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
         <input className="makeDomoSubmit" type="submit" value="Make Domo"/>

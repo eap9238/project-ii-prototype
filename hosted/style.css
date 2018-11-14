@@ -277,7 +277,7 @@ nav:nth-child(1) {
     background-color: #B7101C;
 }
 
-.red .domoBody {
+.red > .domoBody {
     float: right;
     text-align: left;
     width: 80%;
@@ -311,7 +311,7 @@ nav:nth-child(1) {
     background-color: #EED322;
 }
 
-.yellow .domoBody {
+.yellow > .domoBody {
     float: right;
     text-align: left;
     width: 80%;
@@ -345,7 +345,7 @@ nav:nth-child(1) {
     background-color: #08AFE6;
 }
 
-.blue .domoBody {
+.blue > .domoBody {
     float: right;
     text-align: left;
     width: 80%;
@@ -379,7 +379,7 @@ nav:nth-child(1) {
     background-color: #C78700;
 }
 
-.orange .domoBody {
+.orange > .domoBody {
     float: right;
     text-align: left;
     width: 80%;
@@ -413,7 +413,7 @@ nav:nth-child(1) {
     background-color: #05FF47;
 }
 
-.green .domoBody {
+.green > .domoBody {
     float: right;
     text-align: left;
     width: 80%;
