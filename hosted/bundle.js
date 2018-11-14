@@ -53,7 +53,7 @@ var DomoForm = function DomoForm(props) {
       { id: "domoColour", name: "colour" },
       React.createElement(
         "option",
-        { selected: true, style: { backgroundColor: '#DF2935' }, value: "blue" },
+        { style: { backgroundColor: '#DF2935' }, value: "red" },
         "red"
       ),
       React.createElement(
@@ -63,7 +63,7 @@ var DomoForm = function DomoForm(props) {
       ),
       React.createElement(
         "option",
-        { style: { backgroundColor: '#30BCED' }, value: "blue" },
+        { selected: true, style: { backgroundColor: '#30BCED' }, value: "blue" },
         "blue"
       ),
       React.createElement(
@@ -98,7 +98,7 @@ var DomoList = function DomoList(props) {
   var domoNodes = props.domos.map(function (domo) {
     return React.createElement(
       "div",
-      { key: domo._id, className: "red" },
+      { key: domo._id, className: domo.colour },
       React.createElement("img", { src: "/assets/img/domoface.jpeg", alt: "domo face", className: "domoFace" }),
       React.createElement(
         "h3",

@@ -34,9 +34,9 @@ const DomoForm = (props) => {
         <input id="domoBody" type="textarea" name="body" placeholder="Note Contents"/>
         <label htmlFor="colour">Colour: </label>
         <select id="domoColour" name="colour">
-            <option selected style={{backgroundColor:'#DF2935'}} value="blue">red</option>
+            <option style={{backgroundColor:'#DF2935'}} value="red">red</option>
             <option style={{backgroundColor:'#FFE74C'}} value="yellow">yellow</option>
-            <option style={{backgroundColor:'#30BCED'}} value="blue">blue</option>
+            <option selected style={{backgroundColor:'#30BCED'}} value="blue">blue</option>
             <option style={{backgroundColor:'#FFAE03'}} value="orange">orange</option>
             <option style={{backgroundColor:'#35FF69'}} value="green">green</option>
         </select>
@@ -57,7 +57,7 @@ const DomoList = function(props) {
 
   const domoNodes = props.domos.map(function(domo) {
     return (
-      <div key={domo._id} className="red">
+      <div key={domo._id} className={domo.colour}>
         <img src="/assets/img/domoface.jpeg" alt="domo face" className="domoFace"/>
         <h3 className="domoTitle">{domo.title}</h3>
         <div className="domoBody">{domo.body}</div>
