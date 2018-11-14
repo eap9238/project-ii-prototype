@@ -27,8 +27,8 @@ const makeDomo = (req, res) => {
     colour: req.body.colour.value,
   };
     
-  console.log(domoData.colour);
-  console.log(req.body.colour);
+  console.dir(domoData.colour);
+  console.dir(req.body.colour);
 
   const newDomo = new Domo.DomoModel(domoData);
 
