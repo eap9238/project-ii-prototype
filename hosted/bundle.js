@@ -22,7 +22,7 @@ var handleDelete = function handleDelete(e) {
 
   $("#domoMessage").animate({ width: 'hide' }, 350);
 
-  sendAjax('DELETE', $("#deleteDomo").attr("action"), $("#deleteDomo").serialize(), function () {
+  sendAjax('DELETE', $(".deleteDomo").attr("action"), $(".deleteDomo").serialize(), function () {
     loadDomosFromServer($("token").val());
   });
 };
