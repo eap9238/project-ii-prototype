@@ -114,7 +114,7 @@ var DomoList = function DomoList(props) {
         "p",
         null,
         "Colour: ",
-        domo.colour.value
+        domo.colour
       ),
       React.createElement(
         "form",

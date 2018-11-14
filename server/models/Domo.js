@@ -39,7 +39,7 @@ DomoSchema.statics.toAPI = (doc) => ({
   title: doc.title,
   body: doc.body,
   _id: doc._id,
-  colour: doc.colour,
+  colour: doc.colour.value,
 });
 
 DomoSchema.statics.findByOwner = (ownerId, callback) => {
