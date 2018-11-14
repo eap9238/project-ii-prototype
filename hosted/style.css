@@ -81,12 +81,76 @@ nav:nth-child(1) {
     text-decoration: none;
 }
 
-.makeDomoDelete {
+.red < .makeDomoDelete {
     transition: background-color 0.4s ease;
     display: block;
     width: 24px;    
     height: 24px;
-    background-color: #55acee;
+    background-color: #DF2935;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-right: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.orange < .makeDomoDelete {
+    transition: background-color 0.4s ease;
+    display: block;
+    width: 24px;    
+    height: 24px;
+    background-color: #FFAE03;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-right: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.yellow < .makeDomoDelete {
+    transition: background-color 0.4s ease;
+    display: block;
+    width: 24px;    
+    height: 24px;
+    background-color: #FFE74C;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-right: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.green < .makeDomoDelete {
+    transition: background-color 0.4s ease;
+    display: block;
+    width: 24px;    
+    height: 24px;
+    background-color: #35FF69;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-right: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.blue < .makeDomoDelete {
+    transition: background-color 0.4s ease;
+    display: block;
+    width: 24px;    
+    height: 24px;
+    background-color: #30BCED;
     border-radius: 2px;
     color: white;
     text-decoration: none;
