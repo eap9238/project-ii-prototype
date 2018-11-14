@@ -98,7 +98,7 @@ var DomoList = function DomoList(props) {
   var domoNodes = props.domos.map(function (domo) {
     return React.createElement(
       "div",
-      { key: domo._id, className: domo.colour },
+      { key: domo._id, className: "red" },
       React.createElement("img", { src: "/assets/img/domoface.jpeg", alt: "domo face", className: "domoFace" }),
       React.createElement(
         "h3",
@@ -113,7 +113,7 @@ var DomoList = function DomoList(props) {
       React.createElement(
         "p",
         null,
-        "\"Colour: \" + ",
+        "Colour: ",
         domo.colour
       ),
       React.createElement(
