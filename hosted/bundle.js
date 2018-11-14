@@ -22,7 +22,7 @@ var handleDelete = function handleDelete(e) {
 
   $("#domoMessage").animate({ width: 'hide' }, 350);
 
-  sendAjax('DELETE', $(".deleteDomo").attr("action"), $(".deleteDomo").serialize(), function () {
+  sendAjax('DELETE', $("#deleteDomo").attr("action"), $("#deleteDomo").serialize(), function () {
     loadDomosFromServer($("token").val());
   });
 };
@@ -117,7 +117,7 @@ var DomoList = function DomoList(props) {
       ),
       React.createElement(
         "form",
-        { className: "deleteDomo",
+        { id: "deleteDomo",
           onSubmit: handleDelete,
           name: "deleteDomo",
           action: "/deleteDomo",

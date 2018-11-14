@@ -20,7 +20,7 @@ const handleDelete = (e) => {
     
   $("#domoMessage").animate({width:'hide'}, 350);
     
-  sendAjax('DELETE', $(".deleteDomo").attr("action"), $(".deleteDomo").serialize(), function(){
+  sendAjax('DELETE', $("#deleteDomo").attr("action"), $("#deleteDomo").serialize(), function(){
     loadDomosFromServer($("token").val());
   });
 };
@@ -62,7 +62,7 @@ const DomoList = function(props) {
         <h3 className="domoTitle">{domo.title}</h3>
         <div className="domoBody">{domo.body}</div>
         <h4>Date</h4>
-        <form className="deleteDomo"
+        <form id="deleteDomo"
               onSubmit={handleDelete}
               name="deleteDomo"
               action="/deleteDomo"
