@@ -30,6 +30,9 @@ const DomoSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  colour: {
+    type: String,
+  },
 });
 
 DomoSchema.statics.toAPI = (doc) => ({

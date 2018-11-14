@@ -34,8 +34,8 @@ const DomoForm = (props) => {
         <input id="domoBody" type="textarea" name="body" placeholder="Note Contents"/>
         <label htmlFor="colour">Colour: </label>
         <select id="domoColour" name="colour">
-            <option selected style={{backgroundColor:'#DF2935'}} value="red"></option>
-            <option style={{backgroundColor:'#FFE74C'}} value="yellow">red</option>
+            <option selected style={{backgroundColor:'#DF2935'}} value="red">red</option>
+            <option style={{backgroundColor:'#FFE74C'}} value="yellow">yellow</option>
             <option style={{backgroundColor:'#30BCED'}} value="blue">blue</option>
             <option style={{backgroundColor:'#FFAE03'}} value="orange">orange</option>
             <option style={{backgroundColor:'#35FF69'}} value="green">green</option>

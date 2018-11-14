@@ -51,11 +51,15 @@ var DomoForm = function DomoForm(props) {
     React.createElement(
       "select",
       { id: "domoColour", name: "colour" },
-      React.createElement("option", { selected: true, style: { backgroundColor: '#DF2935' }, value: "red" }),
+      React.createElement(
+        "option",
+        { selected: true, style: { backgroundColor: '#DF2935' }, value: "red" },
+        "red"
+      ),
       React.createElement(
         "option",
         { style: { backgroundColor: '#FFE74C' }, value: "yellow" },
-        "red"
+        "yellow"
       ),
       React.createElement(
         "option",
