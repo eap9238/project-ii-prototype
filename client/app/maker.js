@@ -34,7 +34,7 @@ const DomoForm = (props) => {
         <input id="domoBody" type="textarea" name="body" placeholder="Note Contents"/>
         <label htmlFor="colour">Colour: </label>
         <select id="domoColour" name="colour">
-            <option selected style={{backgroundColor:'#DF2935'}} value="red">red</option>
+            <option selected style={{backgroundColor:'#DF2935'}} value="blue">red</option>
             <option style={{backgroundColor:'#FFE74C'}} value="yellow">yellow</option>
             <option style={{backgroundColor:'#30BCED'}} value="blue">blue</option>
             <option style={{backgroundColor:'#FFAE03'}} value="orange">orange</option>
@@ -61,8 +61,7 @@ const DomoList = function(props) {
         <img src="/assets/img/domoface.jpeg" alt="domo face" className="domoFace"/>
         <h3 className="domoTitle">{domo.title}</h3>
         <div className="domoBody">{domo.body}</div>
-        <p>Colour: {domo.colour}</p>
-        <p>Id: {domo._id}</p>
+        <p>Colour: {domo.colour.value}</p>
         <form id="deleteDomo"
               onSubmit={handleDelete}
               name="deleteDomo"
