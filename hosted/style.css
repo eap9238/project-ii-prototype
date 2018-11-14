@@ -253,7 +253,7 @@ nav:nth-child(1) {
     margin-bottom: 30px;
 }
 
-.red > .makeDomoDelete {
+.red > .deleteDomo > .makeDomoDelete {
     transition: background-color 0.4s ease;
     display: block;
     width: 24px;    
@@ -303,7 +303,7 @@ nav:nth-child(1) {
     margin-bottom: 30px;
 }
 
-.orange > .makeDomoDelete {
+.orange > .deleteDomo > .makeDomoDelete {
     transition: background-color 0.4s ease;
     display: block;
     width: 24px;    
@@ -353,7 +353,7 @@ nav:nth-child(1) {
     margin-bottom: 30px;
 }
 
-.yellow > .makeDomoDelete {
+.yellow > .deleteDomo > .makeDomoDelete {
     transition: background-color 0.4s ease;
     display: block;
     width: 24px;    
@@ -403,7 +403,7 @@ nav:nth-child(1) {
     margin-bottom: 30px;
 }
 
-.green > .makeDomoDelete {
+.green > .deleteDomo > .makeDomoDelete {
     transition: background-color 0.4s ease;
     display: block;
     width: 24px;    
@@ -453,7 +453,7 @@ nav:nth-child(1) {
     margin-bottom: 30px;
 }
 
-.blue > .makeDomoDelete {
+.blue > .deleteDomo > .makeDomoDelete {
     transition: background-color 0.4s ease;
     display: block;
     width: 24px;    
