@@ -29,7 +29,7 @@ const handleDelete = (e) => {
     console.dir("Object Parent 3:");
     console.dir(e.closest("div"));
     
-  sendAjax('DELETE', $("#deleteDomo").attr("action"), $("#deleteDomo").serialize(), function(){
+  sendAjax('DELETE', e.attr("action"), e.serialize(), function(){
     loadDomosFromServer($("token").val());
   });
 };
