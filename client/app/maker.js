@@ -20,8 +20,9 @@ const handleDelete = (e) => {
     
   $("#domoMessage").animate({width:'hide'}, 350);
     
-    console.dir(e);
-    console.dir(e.parentNode);
+    console.dir("Object: " + e);
+    console.dir("Object Parent 1: " + e.parentNode);
+    console.dir("Object Parent 2: " + e.parentElement);
     
   sendAjax('DELETE', $("#deleteDomo").attr("action"), $("#deleteDomo").serialize(), function(){
     loadDomosFromServer($("token").val());
