@@ -23,11 +23,13 @@ var handleDelete = function handleDelete(e) {
   $("#domoMessage").animate({ width: 'hide' }, 350);
 
   console.dir("Object:");
-  console.dir(e.parent);
+  console.dir(e);
   console.dir("Object Parent 1:");
   console.dir(e.parentElement);
   console.dir("Object Parent 2:");
   console.dir(e.parentNode);
+  console.dir("Object Parent 3:");
+  console.dir(e.closest("div"));
 
   sendAjax('DELETE', $("#deleteDomo").attr("action"), $("#deleteDomo").serialize(), function () {
     loadDomosFromServer($("token").val());
