@@ -71,7 +71,7 @@ const DomoList = function(props) {
         <h3 className="domoTitle">{domo.title}</h3>
         <div className="domoBody">{domo.body}</div>
         <h4>Date</h4>
-        <form id="deleteDomo"
+        <form id={domo._id}
               onSubmit={handleDelete}
               name="deleteDomo"
               action="/deleteDomo"
