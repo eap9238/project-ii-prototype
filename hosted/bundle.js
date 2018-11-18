@@ -26,6 +26,8 @@ var handleDelete = function handleDelete(e) {
   console.dir(e);
   console.dir("Object Parent 1:");
   console.dir(e.target);
+  console.dir("Original: ");
+  console.dir($("#deleteDomo"));
 
   sendAjax('DELETE', e.target.attr("action"), e.target.serialize(), function () {
     loadDomosFromServer($("token").val());
