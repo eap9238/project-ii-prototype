@@ -26,6 +26,10 @@ var handleDelete = function handleDelete(e) {
   console.dir(e);
   console.dir("Object Parent 1:");
   console.dir(e.target);
+  console.dir("Object Parent 1 ID:");
+  console.dir(e.target.id);
+  console.dir("Object Parent 1 ID:");
+  console.dir($("#" + e.target.id));
   console.dir("Original: ");
   console.dir($("#deleteDomo"));
 
