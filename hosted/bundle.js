@@ -28,11 +28,11 @@ var handleDelete = function handleDelete(e) {
   console.dir($("#deleteDomo"));
 
   console.dir("Action: ");
-  console.dir($("#" + e.target.id).target.attr("action"));
+  //console.dir($("#" + e.target.id).target.attr("action"));    
   console.dir("Action: ");
   console.dir($("#deleteDomo").target.attr("action"));
 
-  sendAjax('DELETE', $("#deleteDomo").target.attr("action"), $("#" + e.target.id).target.serialize(), function () {
+  sendAjax('DELETE', $("#deleteDomo").target.attr("action"), $("#deleteDomo").target.serialize(), function () {
     loadDomosFromServer($("token").val());
   });
 };
