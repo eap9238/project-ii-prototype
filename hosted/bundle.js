@@ -138,12 +138,6 @@ var DomoList = function DomoList(props) {
         domo.body
       ),
       React.createElement(
-        "h4",
-        null,
-        " className=\"domoDate\">",
-        domo.date
-      ),
-      React.createElement(
         "form",
         { id: domo._id,
           onSubmit: handleDelete,
