@@ -60,7 +60,7 @@ const DomoForm = (props) => {
       
             <label htmlFor="body">Contents: </label>
             <br/>
-            <input id="domoBody" type="textarea" name="body" wrap="hard" placeholder="Note Contents"/>
+            <input id="domoBody" type="textarea" name="body" cols="27" wrap="hard" placeholder="Note Contents"/>
       
             <br/>
             <br/>
