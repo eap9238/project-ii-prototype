@@ -103,7 +103,8 @@ nav:nth-child(1) {
 }
 
 .domoForm input[type=text], input[type=textarea], select {
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    margin: auto;
     width: 320px;
     height: 80px;
     /* float:left; */
