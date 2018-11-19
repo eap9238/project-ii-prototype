@@ -168,7 +168,7 @@ var loadDomosFromServer = function loadDomosFromServer(csrf) {
 };
 
 var setup = function setup(csrf) {
-  ReactDOM.render(React.createElement(MoalForm, { csrf: csrf }), document.querySelector("#modalManager"));
+  ReactDOM.render(React.createElement(MoadlForm, { csrf: csrf }), document.querySelector("#modalManager"));
 
   ReactDOM.render(React.createElement(DomoForm, { csrf: csrf }), document.querySelector("#makeDomo"));
 
