@@ -127,7 +127,7 @@ var DomoList = function DomoList(props) {
       ),
       React.createElement(
         "form",
-        { id: "deleteDomo",
+        { id: domo._id,
           onSubmit: handleDelete,
           name: "deleteDomo",
           action: "/deleteDomo",
