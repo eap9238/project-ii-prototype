@@ -32,7 +32,7 @@ var handleDelete = function handleDelete(e) {
   console.dir("Action: ");
   console.dir($("#deleteDomo").target.attr("action"));
 
-  sendAjax('DELETE', $("#deleteDomo").target.attr("action"), $("#deleteDomo").target.serialize(), function () {
+  sendAjax('DELETE', $("#" + e.target.id).attr("action"), $("#" + e.target.id).serialize(), function () {
     loadDomosFromServer($("token").val());
   });
 };
