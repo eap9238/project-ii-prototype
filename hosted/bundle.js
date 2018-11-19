@@ -62,53 +62,57 @@ var DomoForm = function DomoForm(props) {
     "form",
     { id: "domoForm", onSubmit: handleDomo, name: "domoForm", action: "/maker", method: "POST", className: "domoForm" },
     React.createElement(
-      "label",
-      { htmlFor: "title" },
-      "Title: "
-    ),
-    React.createElement("input", { id: "domoTitle", type: "text", name: "title", placeholder: "Note Title" }),
-    React.createElement(
-      "label",
-      { htmlFor: "body" },
-      "Contents: "
-    ),
-    React.createElement("input", { id: "domoBody", type: "textarea", name: "body", placeholder: "Note Contents" }),
-    React.createElement(
-      "label",
-      { htmlFor: "colour" },
-      "Colour: "
-    ),
-    React.createElement(
-      "select",
-      { id: "domoColour", name: "colour" },
+      "div",
+      { className: "DomoFormObject" },
       React.createElement(
-        "option",
-        { style: { backgroundColor: '#DF2935' }, value: "red" },
-        "red"
+        "label",
+        { htmlFor: "title" },
+        "Title: "
+      ),
+      React.createElement("input", { id: "domoTitle", type: "text", name: "title", placeholder: "Note Title" }),
+      React.createElement(
+        "label",
+        { htmlFor: "body" },
+        "Contents: "
+      ),
+      React.createElement("input", { id: "domoBody", type: "textarea", name: "body", placeholder: "Note Contents" }),
+      React.createElement(
+        "label",
+        { htmlFor: "colour" },
+        "Colour: "
       ),
       React.createElement(
-        "option",
-        { style: { backgroundColor: '#FFE74C' }, value: "yellow" },
-        "yellow"
+        "select",
+        { id: "domoColour", name: "colour" },
+        React.createElement(
+          "option",
+          { style: { backgroundColor: '#DF2935' }, value: "red" },
+          "red"
+        ),
+        React.createElement(
+          "option",
+          { style: { backgroundColor: '#FFE74C' }, value: "yellow" },
+          "yellow"
+        ),
+        React.createElement(
+          "option",
+          { selected: true, style: { backgroundColor: '#30BCED' }, value: "blue" },
+          "blue"
+        ),
+        React.createElement(
+          "option",
+          { style: { backgroundColor: '#FFAE03' }, value: "orange" },
+          "orange"
+        ),
+        React.createElement(
+          "option",
+          { style: { backgroundColor: '#35FF69' }, value: "green" },
+          "green"
+        )
       ),
-      React.createElement(
-        "option",
-        { selected: true, style: { backgroundColor: '#30BCED' }, value: "blue" },
-        "blue"
-      ),
-      React.createElement(
-        "option",
-        { style: { backgroundColor: '#FFAE03' }, value: "orange" },
-        "orange"
-      ),
-      React.createElement(
-        "option",
-        { style: { backgroundColor: '#35FF69' }, value: "green" },
-        "green"
-      )
-    ),
-    React.createElement("input", { type: "hidden", id: "token", name: "_csrf", value: props.csrf }),
-    React.createElement("input", { className: "makeDomoSubmit", type: "submit", value: "Make Domo" })
+      React.createElement("input", { type: "hidden", id: "token", name: "_csrf", value: props.csrf }),
+      React.createElement("input", { className: "makeDomoSubmit", type: "submit", value: "Make Domo" })
+    )
   );
 };
 

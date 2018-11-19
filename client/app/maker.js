@@ -58,20 +58,22 @@ const ModalForm = (props) => {
 const DomoForm = (props) => {
   return (
     <form id="domoForm" onSubmit={handleDomo} name="domoForm" action="/maker" method="POST" className="domoForm">
-        <label htmlFor="title">Title: </label>
-        <input id="domoTitle" type="text" name="title" placeholder="Note Title"/>
-        <label htmlFor="body">Contents: </label>
-        <input id="domoBody" type="textarea" name="body" placeholder="Note Contents"/>
-        <label htmlFor="colour">Colour: </label>
-        <select id="domoColour" name="colour">
-            <option style={{backgroundColor:'#DF2935'}} value="red">red</option>
-            <option style={{backgroundColor:'#FFE74C'}} value="yellow">yellow</option>
-            <option selected style={{backgroundColor:'#30BCED'}} value="blue">blue</option>
-            <option style={{backgroundColor:'#FFAE03'}} value="orange">orange</option>
-            <option style={{backgroundColor:'#35FF69'}} value="green">green</option>
-        </select>
-        <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
-        <input className="makeDomoSubmit" type="submit" value="Make Domo"/>
+        <div className="DomoFormObject"> 
+            <label htmlFor="title">Title: </label>
+            <input id="domoTitle" type="text" name="title" placeholder="Note Title"/>
+            <label htmlFor="body">Contents: </label>
+            <input id="domoBody" type="textarea" name="body" placeholder="Note Contents"/>
+            <label htmlFor="colour">Colour: </label>
+            <select id="domoColour" name="colour">
+                <option style={{backgroundColor:'#DF2935'}} value="red">red</option>
+                <option style={{backgroundColor:'#FFE74C'}} value="yellow">yellow</option>
+                <option selected style={{backgroundColor:'#30BCED'}} value="blue">blue</option>
+                <option style={{backgroundColor:'#FFAE03'}} value="orange">orange</option>
+                <option style={{backgroundColor:'#35FF69'}} value="green">green</option>
+            </select>
+            <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
+            <input className="makeDomoSubmit" type="submit" value="Make Domo"/>
+        </div>
     </form>
   );
 };
