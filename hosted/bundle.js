@@ -36,18 +36,6 @@ var handleDelete = function handleDelete(e) {
 
   $("#domoMessage").animate({ width: 'hide' }, 350);
 
-  /*
-  console.dir("Object Parent 1 Object:");
-  console.dir($("#" + e.target.id));
-  console.dir("Original: ");
-  console.dir($("#deleteDomo"));
-  
-  console.dir("Action: ");
-  console.dir($("#" + e.target.id).attr("action"));    
-  console.dir("Action: ");
-  console.dir($("#deleteDomo").attr("action"));
-  */
-
   sendAjax('DELETE', $("#" + e.target.id).attr("action"), $("#" + e.target.id).serialize(), function () {
     loadDomosFromServer($("token").val());
   });
@@ -115,8 +103,13 @@ var DomoForm = function DomoForm(props) {
         )
       ),
       React.createElement("input", { type: "hidden", id: "token", name: "_csrf", value: props.csrf }),
+      React.createElement(
+        "br",
+        null,
+        " "
+      ),
       React.createElement("input", { className: "makeDomoSubmit", type: "submit", value: "Make Domo" }),
-      React.createElement("input", { className: "makeDomoSubmit", onclick: hideModal, type: "button", value: "Exit" })
+      React.createElement("input", { className: "makeDomoSubmit", onclick: "hideModal", type: "button", value: "Exit" })
     )
   );
 };
