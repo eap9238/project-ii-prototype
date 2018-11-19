@@ -66,7 +66,7 @@ const DomoForm = (props) => {
             <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
       
             <input className="makeDomoSubmit" type="submit" value="Make Domo"/>
-            <input className="makeDomoSubmit" onclick="hideModal" type="button" value="Exit"/>
+      {/* <input className="makeDomoSubmit" onclick="hideModal" type="button" value="Exit"/> */}
         </div>
     </form>
   );
