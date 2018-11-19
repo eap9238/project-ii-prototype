@@ -21,8 +21,12 @@ const showModal = (e) => {
   e.preventDefault();
     
   document.getElementById("domoForm").style.display = "block";
+};
+
+const hideModal = (e) => {
+  e.preventDefault();
     
-  console.log("Yoop");
+  document.getElementById("domoForm").style.display = "none";
 };
 
 const handleDelete = (e) => {
@@ -73,6 +77,7 @@ const DomoForm = (props) => {
             </select>
             <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
             <input className="makeDomoSubmit" type="submit" value="Make Domo"/>
+            <input className="makeDomoSubmit" onclick={hideModal} type="button" value="Exit"/>
         </div>
     </form>
   );

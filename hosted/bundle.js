@@ -23,8 +23,12 @@ var showModal = function showModal(e) {
   e.preventDefault();
 
   document.getElementById("domoForm").style.display = "block";
+};
 
-  console.log("Yoop");
+var hideModal = function hideModal(e) {
+  e.preventDefault();
+
+  document.getElementById("domoForm").style.display = "none";
 };
 
 var handleDelete = function handleDelete(e) {
@@ -111,7 +115,8 @@ var DomoForm = function DomoForm(props) {
         )
       ),
       React.createElement("input", { type: "hidden", id: "token", name: "_csrf", value: props.csrf }),
-      React.createElement("input", { className: "makeDomoSubmit", type: "submit", value: "Make Domo" })
+      React.createElement("input", { className: "makeDomoSubmit", type: "submit", value: "Make Domo" }),
+      React.createElement("input", { className: "makeDomoSubmit", onclick: hideModal, type: "button", value: "Exit" })
     )
   );
 };
