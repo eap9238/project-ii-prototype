@@ -117,7 +117,7 @@ const loadDomosFromServer = (csrf) => {
 
 const setup = function(csrf) {
   ReactDOM.render(
-    <MoadlForm csrf={csrf} />, document.querySelector("#modalManager")
+    <ModalForm csrf={csrf} />, document.querySelector("#modalManager")
   );
     
   ReactDOM.render(
