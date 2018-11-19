@@ -115,12 +115,16 @@ nav:nth-child(1) {
     font-size: 1.5em;
 }
 
-.domoForm input[type=textarea], select, option {
-    font-size: 1.25em;
+.domoForm input[type=textarea] {
     height: 160px;
 }
 
+.domoForm input[type=textarea], select, option {
+    font-size: 1.25em;
+}
+
 .domoForm select, option {
+    width: 80px;
     width: 80px;
 }
 
