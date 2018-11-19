@@ -97,12 +97,12 @@ nav:nth-child(1) {
     width: 75px;
     margin-left: 10px;
     font-size: 1.2em;
-    float: left;
+    /* float: left; */
     color: white;
 }
 
 .domoForm input[type=text], input[type=textarea] {
-    float:left;
+    /* float:left; */
 }
 
 .makeDomoSubmit {
