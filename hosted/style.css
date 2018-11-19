@@ -83,6 +83,9 @@ nav:nth-child(1) {
 }
 
 .domoFormObject {
+    background-color: #55acee;
+    border-radius: 4px;
+    border: 2px solid #338acc;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
