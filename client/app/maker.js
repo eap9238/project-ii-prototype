@@ -20,16 +20,13 @@ const handleDelete = (e) => {
     
   $("#domoMessage").animate({width:'hide'}, 350);
     
-    console.dir("Object:");
-    console.dir(e);
-    console.dir("Object Parent 1:");
-    console.dir(e.target);
-    console.dir("Object Parent 1 ID:");
-    console.dir(e.target.id);
-    console.dir("Object Parent 1 ID:");
+    console.dir("Object Parent 1 Object:");
     console.dir($("#" + e.target.id));
     console.dir("Original: ");
     console.dir($("#deleteDomo"));
+    
+    console.dir("Original: ");
+    console.dir($("#" + e.target.id).target.attr("action"));
     
   sendAjax('DELETE', $("#" + e.target.id).target.attr("action"), $("#" + e.target.id).target.serialize(), function(){
     loadDomosFromServer($("token").val());
