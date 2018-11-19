@@ -53,8 +53,14 @@ const DomoForm = (props) => {
         <div className="DomoFormObject"> 
             <label htmlFor="title">Title: </label>
             <input id="domoTitle" type="text" name="title" placeholder="Note Title"/>
+      
+            <br/>
+      
             <label htmlFor="body">Contents: </label>
             <input id="domoBody" type="textarea" name="body" placeholder="Note Contents"/>
+      
+            <br/>
+      
             <label htmlFor="colour">Colour: </label>
             <select id="domoColour" name="colour">
                 <option style={{backgroundColor:'#DF2935'}} value="red">red</option>
@@ -64,6 +70,8 @@ const DomoForm = (props) => {
                 <option style={{backgroundColor:'#35FF69'}} value="green">green</option>
             </select>
             <input type="hidden" id="token" name="_csrf" value={props.csrf}/>
+      
+            <br/>
       
             <input className="makeDomoSubmit" type="submit" value="Make Domo"/>
       {/* <input className="makeDomoSubmit" onclick="hideModal" type="button" value="Exit"/> */}
