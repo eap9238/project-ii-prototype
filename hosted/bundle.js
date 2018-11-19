@@ -140,7 +140,8 @@ var DomoList = function DomoList(props) {
       React.createElement(
         "h4",
         null,
-        "Date"
+        " className=\"domoDate\">",
+        domo.date
       ),
       React.createElement(
         "form",
