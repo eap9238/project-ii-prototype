@@ -71,7 +71,7 @@ var DomoForm = function DomoForm(props) {
         "Contents: "
       ),
       React.createElement("br", null),
-      React.createElement("input", { id: "domoBody", type: "textarea", name: "body", placeholder: "Note Contents" }),
+      React.createElement("input", { id: "domoBody", type: "textarea", name: "body", wrap: "hard", placeholder: "Note Contents" }),
       React.createElement("br", null),
       React.createElement("br", null),
       React.createElement(
