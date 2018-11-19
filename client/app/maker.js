@@ -26,7 +26,9 @@ const handleDelete = (e) => {
     console.dir($("#deleteDomo"));
     
     console.dir("Action: ");
-    console.dir($("#" + e.target.id).target.attr("action"));
+    console.dir($("#" + e.target.id).target.attr("action"));    
+    console.dir("Action: ");
+    console.dir($("#deleteDomo").target.attr("action"));
     
   sendAjax('DELETE', $("#" + e.target.id).target.attr("action"), $("#" + e.target.id).target.serialize(), function(){
     loadDomosFromServer($("token").val());
