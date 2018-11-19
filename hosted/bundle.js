@@ -27,7 +27,7 @@ var handleDelete = function handleDelete(e) {
   console.dir("Original: ");
   console.dir($("#deleteDomo"));
 
-  console.dir("Original: ");
+  console.dir("Action: ");
   console.dir($("#" + e.target.id).target.attr("action"));
 
   sendAjax('DELETE', $("#" + e.target.id).target.attr("action"), $("#" + e.target.id).target.serialize(), function () {
@@ -125,7 +125,7 @@ var DomoList = function DomoList(props) {
       ),
       React.createElement(
         "form",
-        { id: domo._id,
+        { id: "deleteDomo",
           onSubmit: handleDelete,
           name: "deleteDomo",
           action: "/deleteDomo",
