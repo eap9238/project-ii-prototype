@@ -94,14 +94,17 @@ nav:nth-child(1) {
 
 .domoForm label {
     display: inline-block;
-    width: 75px;
+    width: 80px;
     margin-left: 10px;
     font-size: 1.2em;
     /* float: left; */
     color: white;
 }
 
-.domoForm input[type=text], input[type=textarea] {
+.domoForm input[type=text], input[type=textarea], select {
+    margin-left: 10px;
+    width: 320px;
+    height: 80px;
     /* float:left; */
 }
 

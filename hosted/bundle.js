@@ -61,20 +61,25 @@ var DomoForm = function DomoForm(props) {
         { htmlFor: "title" },
         "Title: "
       ),
+      React.createElement("br", null),
       React.createElement("input", { id: "domoTitle", type: "text", name: "title", placeholder: "Note Title" }),
+      React.createElement("br", null),
       React.createElement("br", null),
       React.createElement(
         "label",
         { htmlFor: "body" },
         "Contents: "
       ),
+      React.createElement("br", null),
       React.createElement("input", { id: "domoBody", type: "textarea", name: "body", placeholder: "Note Contents" }),
+      React.createElement("br", null),
       React.createElement("br", null),
       React.createElement(
         "label",
         { htmlFor: "colour" },
         "Colour: "
       ),
+      React.createElement("br", null),
       React.createElement(
         "select",
         { id: "domoColour", name: "colour" },
@@ -105,6 +110,7 @@ var DomoForm = function DomoForm(props) {
         )
       ),
       React.createElement("input", { type: "hidden", id: "token", name: "_csrf", value: props.csrf }),
+      React.createElement("br", null),
       React.createElement("br", null),
       React.createElement("input", { className: "makeDomoSubmit", type: "submit", value: "Make Domo" })
     )
