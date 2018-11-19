@@ -17,6 +17,10 @@ var handleDomo = function handleDomo(e) {
   return false;
 };
 
+var showModal = function showModal(e) {
+  console.log("Yoop");
+};
+
 var handleDelete = function handleDelete(e) {
   e.preventDefault();
 
@@ -37,6 +41,14 @@ var handleDelete = function handleDelete(e) {
   sendAjax('DELETE', $("#" + e.target.id).attr("action"), $("#" + e.target.id).serialize(), function () {
     loadDomosFromServer($("token").val());
   });
+};
+
+var ModalForm = function ModalForm(props) {
+  return React.createElement(
+    "form",
+    { id: "modalForm", onSubmit: showModal, name: "modalForm", className: "modalForm" },
+    React.createElement("input", { className: "makeModalSubmit", type: "submit", value: "Make Modal" })
+  );
 };
 
 var DomoForm = function DomoForm(props) {
@@ -156,6 +168,8 @@ var loadDomosFromServer = function loadDomosFromServer(csrf) {
 };
 
 var setup = function setup(csrf) {
+  ReactDOM.render(React.createElement(MoalForm, { csrf: csrf }), document.querySelector("#modalManager"));
+
   ReactDOM.render(React.createElement(DomoForm, { csrf: csrf }), document.querySelector("#makeDomo"));
 
   ReactDOM.render(React.createElement(DomoList, { domos: [], csrf: csrf }), document.querySelector("#domos"));

@@ -15,6 +15,10 @@ const handleDomo = (e) => {
   return false;
 };
 
+const showModal = (e) => {
+    console.log("Yoop");
+};
+
 const handleDelete = (e) => {
   e.preventDefault();
     
@@ -35,6 +39,14 @@ const handleDelete = (e) => {
   sendAjax('DELETE', $("#" + e.target.id).attr("action"), $("#" + e.target.id).serialize(), function(){
     loadDomosFromServer($("token").val());
   });
+};
+
+const ModalForm = (props) => {
+  return (
+    <form id="modalForm" onSubmit={showModal} name="modalForm" className="modalForm">
+        <input className="makeModalSubmit" type="submit" value="Make Modal"/>
+    </form>
+  );
 };
 
 const DomoForm = (props) => {
@@ -104,6 +116,10 @@ const loadDomosFromServer = (csrf) => {
 };
 
 const setup = function(csrf) {
+  ReactDOM.render(
+    <MoalForm csrf={csrf} />, document.querySelector("#modalManager")
+  );
+    
   ReactDOM.render(
     <DomoForm csrf={csrf} />, document.querySelector("#makeDomo")
   );
