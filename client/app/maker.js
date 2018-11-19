@@ -8,6 +8,8 @@ const handleDomo = (e) => {
     return false;
   }
 
+  $("#domoForm").style.display = "none";
+    
   sendAjax('POST', $("#domoForm").attr("action"), $("#domoForm").serialize(), function() {
     loadDomosFromServer($("#token").val());
   });
@@ -16,7 +18,11 @@ const handleDomo = (e) => {
 };
 
 const showModal = (e) => {
-    console.log("Yoop");
+  e.preventDefault();
+    
+  $("#domoForm").style.display = "block";
+    
+  console.log("Yoop");
 };
 
 const handleDelete = (e) => {
