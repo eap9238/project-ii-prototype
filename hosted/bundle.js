@@ -112,7 +112,8 @@ var DomoForm = function DomoForm(props) {
       React.createElement("input", { type: "hidden", id: "token", name: "_csrf", value: props.csrf }),
       React.createElement("br", null),
       React.createElement("br", null),
-      React.createElement("input", { className: "makeDomoSubmit", type: "submit", value: "Make Domo" })
+      React.createElement("input", { className: "makeDomoSubmit", type: "submit", value: "Make Domo" }),
+      React.createElement("input", { className: "makeDomoSubmit", onClick: hideModal, type: "button", value: "Exit" })
     )
   );
 };
@@ -131,6 +132,8 @@ var DomoList = function DomoList(props) {
   }
 
   var domoNodes = props.domos.map(function (domo) {
+    console.dir(domo);
+
     return React.createElement(
       "div",
       { key: domo._id, className: domo.colour },
@@ -144,6 +147,12 @@ var DomoList = function DomoList(props) {
         "div",
         { className: "domoBody" },
         domo.body
+      ),
+      React.createElement(
+        "h4",
+        { className: "domoDate" },
+        "Date: ",
+        domo.date
       ),
       React.createElement(
         "form",

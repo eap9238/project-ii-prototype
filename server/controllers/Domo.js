@@ -13,22 +13,22 @@ const makerPage = (req, res) => {
   });
 };
 
-//create domo
+// create domo
 const makeDomo = (req, res) => {
   if (!req.body.title || !req.body.body || !req.body.colour) {
     return res.status(400).json({ error: 'RAWR! Both title and contents are required' });
   }
 
-    //set internal data
+    // set internal data
   const domoData = {
     title: req.body.title,
     body: req.body.body,
     owner: req.session.account._id,
     colour: req.body.colour,
   };
-    
-  console.dir(domoData.colour);
-  console.dir(req.body.colour);
+
+  //console.dir(domoData.colour);
+  //console.dir(req.body.colour);
 
   const newDomo = new Domo.DomoModel(domoData);
 
@@ -64,15 +64,15 @@ const getDomos = (request, response) => {
   });
 };
 
-//delete the g-d-nm domo
-//why won't you just die?
-//please?
+// delete the g-d-nm domo
+// why won't you just die?
+// please?
 const deleteDomo = (request, response) => {
   const req = request;
   const res = response;
   console.log(req.body);
 
-  //find the domo that needs killing
+  // find the domo that needs killing
   return Domo.DomoModel.removeByID(req.body._id, (err) => {
     if (err) {
       console.log(err);
