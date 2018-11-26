@@ -133,6 +133,7 @@ var DomoList = function DomoList(props) {
 
   var domoNodes = props.domos.map(function (domo) {
     console.dir(domo);
+    console.dir(domo.date);
 
     return React.createElement(
       "div",
@@ -152,7 +153,7 @@ var DomoList = function DomoList(props) {
         "h4",
         { className: "domoDate" },
         "Date: ",
-        domo.date
+        domo.date.getDate()
       ),
       React.createElement(
         "form",
