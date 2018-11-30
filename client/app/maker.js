@@ -4,7 +4,7 @@ const handleDomo = (e) => {
   $("#domoMessage").animate({width:'hide'},350);
 
   if($("#domoTitle").val() == '' || $("#domoBody").val() == '') {
-    handleError("RAWR! All fields are required");
+    handleError("Please select options for all fields");
     return false;
   }
 
@@ -18,9 +18,9 @@ const handleDomo = (e) => {
 };
 
 const showModal = (e) => {
-  e.preventDefault();
-    
-  document.getElementById("domoForm").style.display = "block";
+  //e.preventDefault();
+    console.log("Yo");
+  //document.getElementById("domoForm").style.display = "block";
 };
 
 const hideModal = (e) => {
@@ -39,15 +39,11 @@ const handleDelete = (e) => {
   });
 };
 
-const ModalForm = (props) => {
-  return (
-    <form id="modalForm" onSubmit={showModal} name="modalForm" className="modalForm">
-        <input className="makeModalSubmit" type="submit" value="Make Modal"/>
-    </form>
-  );
-};
-
 const DomoForm = (props) => {
+  document.getElementById("modal").onclick = function() {
+      document.getElementById("domoForm").style.display = "block";
+  };
+    
   return (
     <form id="domoForm" onSubmit={handleDomo} name="domoForm" action="/maker" method="POST" className="domoForm">
         <div className="DomoFormObject"> 
@@ -90,7 +86,11 @@ const DomoList = function(props) {
   if(props.domos.length === 0) {
     return (
       <div className="domoList">
-        <h3 className="emptyDomo">No Domos yet</h3>
+        <h3 className="emptyDomo">
+        <br/>
+        <br/>
+        <br/>
+        </h3>
       </div>
     );
   }
@@ -135,9 +135,11 @@ const loadDomosFromServer = (csrf) => {
 };
 
 const setup = function(csrf) {
-  ReactDOM.render(
+  /*
+    ReactDOM.render(
     <ModalForm csrf={csrf} />, document.querySelector("#modalManager")
   );
+  */
     
   ReactDOM.render(
     <DomoForm csrf={csrf} />, document.querySelector("#makeDomo")

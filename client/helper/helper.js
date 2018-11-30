@@ -1,7 +1,11 @@
 // handleError()
 const handleError = (msg) => {
+  /*
   $('#errorMessage').text(msg);
   $('#domoMessage').animate({ width: 'toggle' }, 350);
+  */
+    
+    window.alert(msg);
 };
 
 // redirect()

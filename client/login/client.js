@@ -5,8 +5,8 @@ const handleLogin = (e) => {
   $('#domoMessage').animate({ width: 'hide' }, 350);
   
   // IF not all the fields are filled in...
-  if ($('#user').val() == '' || $('#pass').val() == '') {
-    handleError("RAWR! Username or password is empty");
+  if ($('#inputEmail').val() == '' || $('#inputPassword').val() == '') {
+    handleError("Either Username or password fields are blank");
     return false;
   }
   
@@ -24,14 +24,14 @@ const handleSignup = (e) => {
   $('#domoMessage').animate({ width: 'hide' }, 350);
   
   // IF not all of the fields are filled in...
-  if ($('#user').val() == '' || $('#pass').val() == '' || $('#pass2').val() == '') {
-    handleError("RAWR! All fields are required");
+  if ($('#inputEmail').val() == '' || $('#inputPassword').val() == '' || $('#inputPassword2').val() == '') {
+    handleError("Please select options for all fields");
     return false;
   }
   
   // IF both password fields are not the same...
-  if ($('#pass').val() !== $('#pass2').val()) {
-    handleError("RAWR! Passwords do not match");
+  if ($('#inputPassword').val() !== $('#inputPassword2').val()) {
+    handleError("Passwords do not match");
     return false;
   }
   
@@ -44,19 +44,39 @@ const handleSignup = (e) => {
 // LoginWindow()
 const LoginWindow = (props) => {
   return (
-    <form id='loginForm'
-          name='loginForm'
-          onSubmit={handleLogin}
-          action='/login'
-          method='POST'
-          className='mainForm'>
-      <label htmlFor='username'>Username: </label>
-      <input id='user' type='text' name='username' placeholder='username'/>
-      <label htmlFor='pass'>Password: </label>
-      <input id='pass' type='password' name='pass' placeholder='password'/>
-      <input type='hidden' name='_csrf' value={props.csrf}/>
-      <input className='formSubmit' type='submit' value='Sign In'/>
-    </form>
+    <div className="text-center" id="bodyContainer">
+        <form   className="form-signin mainForm"
+                id='loginForm'
+                name='loginForm'
+                onSubmit={handleLogin}
+                action='/login'
+                method='POST'
+         >
+
+            <img className="mb-4" src="/assets/img/face.png" alt="" width="146" height="146"/>
+      
+            <br/>
+      
+            <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
+      
+            <br/>
+
+            <label for="inputEmail" className="sr-only">Email address</label>
+            <input id="inputEmail" type="text" name='username' className="form-control" required autofocus placeholder="Username"/>
+            <label for="inputPassword" className="sr-only">Password</label>
+            <input type="password" name='pass' id="inputPassword" className="form-control" required placeholder="Password"/>
+
+            <input type='hidden' name='_csrf' value={props.csrf} />
+      
+            <br/>
+
+            <button className='formSubmit btn btn-lg btn-primary btn-block' type='submit' type="submit">Sign in</button>
+      
+            <br/>
+      
+            <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+        </form>
+    </div>
   );
 };
 
@@ -70,11 +90,11 @@ const SignupWindow = (props) => {
           method='POST'
           className='mainForm'>
       <label htmlFor='username'>Username: </label>
-      <input id='user' type='text' name='username' placeholder='username'/>
+      <input id='inputEmail' type='text' name='username' placeholder='username'/>
       <label htmlFor='pass'>Password: </label>
-      <input id='pass' type='password' name='pass' placeholder='password'/>
+      <input id='inputPassword' type='password' name='pass' placeholder='password'/>
       <label htmlFor='pass2'>Password: </label>
-      <input id='pass2' type='password' name='pass2' placeholder='retype password'/>
+      <input id='inputPassword2' type='password' name='pass2' placeholder='retype password'/>
       <input type='hidden' name='_csrf' value={props.csrf}/>
       <input className='formSubmit' type='submit' value='Sign Up'/>
     </form>

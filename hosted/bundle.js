@@ -6,7 +6,7 @@ var handleDomo = function handleDomo(e) {
   $("#domoMessage").animate({ width: 'hide' }, 350);
 
   if ($("#domoTitle").val() == '' || $("#domoBody").val() == '') {
-    handleError("RAWR! All fields are required");
+    handleError("Please select options for all fields");
     return false;
   }
 
@@ -20,9 +20,9 @@ var handleDomo = function handleDomo(e) {
 };
 
 var showModal = function showModal(e) {
-  e.preventDefault();
-
-  document.getElementById("domoForm").style.display = "block";
+  //e.preventDefault();
+  console.log("Yo");
+  //document.getElementById("domoForm").style.display = "block";
 };
 
 var hideModal = function hideModal(e) {
@@ -41,15 +41,11 @@ var handleDelete = function handleDelete(e) {
   });
 };
 
-var ModalForm = function ModalForm(props) {
-  return React.createElement(
-    "form",
-    { id: "modalForm", onSubmit: showModal, name: "modalForm", className: "modalForm" },
-    React.createElement("input", { className: "makeModalSubmit", type: "submit", value: "Make Modal" })
-  );
-};
-
 var DomoForm = function DomoForm(props) {
+  document.getElementById("modal").onclick = function () {
+    document.getElementById("domoForm").style.display = "block";
+  };
+
   return React.createElement(
     "form",
     { id: "domoForm", onSubmit: handleDomo, name: "domoForm", action: "/maker", method: "POST", className: "domoForm" },
@@ -126,7 +122,9 @@ var DomoList = function DomoList(props) {
       React.createElement(
         "h3",
         { className: "emptyDomo" },
-        "No Domos yet"
+        React.createElement("br", null),
+        React.createElement("br", null),
+        React.createElement("br", null)
       )
     );
   }
@@ -184,7 +182,11 @@ var loadDomosFromServer = function loadDomosFromServer(csrf) {
 };
 
 var setup = function setup(csrf) {
-  ReactDOM.render(React.createElement(ModalForm, { csrf: csrf }), document.querySelector("#modalManager"));
+  /*
+    ReactDOM.render(
+    <ModalForm csrf={csrf} />, document.querySelector("#modalManager")
+  );
+  */
 
   ReactDOM.render(React.createElement(DomoForm, { csrf: csrf }), document.querySelector("#makeDomo"));
 
@@ -206,8 +208,12 @@ $(document).ready(function () {
 
 // handleError()
 var handleError = function handleError(msg) {
+  /*
   $('#errorMessage').text(msg);
   $('#domoMessage').animate({ width: 'toggle' }, 350);
+  */
+
+  window.alert(msg);
 };
 
 // redirect()
