@@ -27,8 +27,8 @@ const DomoSchema = new mongoose.Schema({
     ref: 'Account',
   },
   date: {
-    type: Date,
-    default: new Date(),
+    type: String,
+    default: new Date().getMonth() + "/" + new Date().getDate() + "/" + new Date().getFullYear(),
   },
   colour: {
     type: String,

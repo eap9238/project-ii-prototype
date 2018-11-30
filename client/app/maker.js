@@ -104,7 +104,7 @@ const DomoList = function(props) {
         <img src="/assets/img/domoface.jpeg" alt="domo face" className="domoFace"/>
         <h3 className="domoTitle">{domo.title}</h3>
         <div className="domoBody">{domo.body}</div>
-        <h4 className="domoDate">Date: {domo.date.getDate()}</h4>
+        <h4 className="domoDate">Date: {domo.date}</h4>
         <form id={domo._id}
               onSubmit={handleDelete}
               name="deleteDomo"
